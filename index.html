@@ -12,48 +12,115 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <i class="fab fa-youtube"></i>
             <span class="logo-title">YouTube</span>
         </div>
-        <div class="headerIcons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-v"></i>
+        <div class="header-icons">
+            <button><i class="fas fa-search"></i></button>
+            <button><i class="fas fa-ellipsis-v"></i></button>
         </div>
-        <div class="signIn"></div>
     </header>
 
-    <video src=""></video>
-
-    <section class="info">
-        <div class="videoInfo">
-            <div class="videoInfo-title">
-
+    <div class="webLeftAndRight">
+        <div class="webLeft">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UkBC8Icypv0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </video>
             </div>
-        </div>
-        <ul class="action">
-            <li><button><i class="active fas fa-thumbs-up"></i><span class="active">1K</span></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-            <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
-        </ul>
-        <div class="channelInfo"></div>
-    </section>
 
-    <section class="upNext">
-        <div class="upNext-header">
-            <span class="upNext-title">Up next</span>
-            <div class="upNext-autoPlay">
-            </div>
+            <section class="info">
+                <div class="videoInfo">
+                    <ul class="videoInfo_hashtag">
+                        <li><a href="#">#tumblerDIY</a></li>
+                        <li><a href="#">#PaintMarker</a></li>
+                        <li><a href="#">#happyDIY</a></li>
+                    </ul>
+                    <div class="videoInfo-title">
+                        <span>텀블러 리폼하기 (DIY bottle painting) | 페인트 마카로 텀블러를 예쁘게 꾸며볼께요! 준비물 텀블러 또는 공병과 페인트 마카만 있으면 되는 간단한
+                            DIY
+                            :)</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <ul class="action">
+                    <li><button><i class="active fas fa-thumbs-up"></i>
+                            <div class="active">1K</div>
+                        </button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i>
+                            <div>0</div>
+                        </button></li>
+                    <li><button><i class="fas fa-share"></i>
+                            <div>Share</div>
+                        </button></li>
+                    <li><button><i class="fas fa-plus"></i>
+                            <div>Save</div>
+                        </button></li>
+                    <li><button><i class="fab fa-font-awesome-flag"></i>
+                            <div>Report</div>
+                        </button></li>
+                </ul>
+                <hr>
+                <div class="channelInfo">
+                    <div class="channelInfo-info">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GjA3dW85ZSsjyNzr3DFP25ivoCq3BKOmntNAIys=s88-c-k-c0xffffffff-no-rj-mo"
+                            alt="image of Adventure playground channel">
+                        <div class="titleAndSubscriber">
+                            <div class="channelInfo-title">Adventure playground</div>
+                            <div class="channelInfo-subscriber">110 subscribers</div>
+                        </div>
+                    </div>
+                    <button class="subscribe" type="submit">subscribe</button>
+                </div>
+                <hr>
+            </section>
         </div>
-        <ul class="upNext-videos">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
+
+        <div class="webRight">
+            <section class="upNext">
+                <div class="upNext-header">
+                    <span class="upNext-title">Up next</span>
+                    <div class="upNext-autoPlay">
+                        <span>Auto play</span>
+                        <label class="autoplay">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <ul class="upNext-video">
+                    <li><img src="https://i.ytimg.com/vi/ARMg9eh8aRQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDIBsX7E8w0dPuErBA7lvqVkkQHeA"
+                            alt="sumnail of Nature sounds in Jujeon pebble beach">
+                        <ul class="upNext-video-info">
+                            <li class="upNext-video-title">주전몽돌해변 파도소리 (Nature sounds in Jujeon pebble beach)</li>
+                            <li>Adventure playground</li>
+                            <li>560 views</li>
+                        </ul>
+                    </li>
+                    <li><img src="https://i.ytimg.com/vi/xN6KsiB0GeE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBknRFpA2ggNIvISgeKJM8bRpBGxg"
+                            alt="sumnail of Sound of Daewangam Park">
+                        <ul class="upNext-video-info">
+                            <li class="upNext-video-title">대왕암공원 파도소리 (Sound of Daewangam Park)</li>
+                            <li>Adventure playground</li>
+                            <li>260 views</li>
+                        </ul>
+                    </li>
+                    <li><img src="https://i.ytimg.com/vi/SjXDs1p3_bE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBYeQYm4ChS6Qou_rey8VS-zZJUUw"
+                            alt="sumnail of Sound of Daewangam Park">
+                        <ul class="upNext-video-info">
+                            <li class="upNext-video-title">돌에 그림그리기 (Mandala stone)</li>
+                            <li>Adventure playground</li>
+                            <li>1,745 views</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>

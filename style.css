@@ -1,0 +1,253 @@
+:root {
+    --header-backgorund: black;
+    --header-logo: red;
+    --white: white;
+    --active: #2196F3;
+    --grey: grey;
+    --light-grey: lightgray;
+
+    --padding-large: 12px;
+    --padding-medium: 8px;
+    --padding-small: 4px;
+    --avatar-size: 36px;
+
+    --font-large: 18px;
+    --font-midium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background-color: var(--header-backgorund);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-medium) var(--padding-large);
+    font-size: var(--font-large);
+}
+
+header .fa-youtube {
+    color: var(--header-logo);
+}
+
+header .logo-title {
+    font-weight: bold;
+}
+
+header .fa-search,
+.fa-ellipsis-v {
+    color: var(--white);
+    padding: 0 var(--padding-medium)
+}
+
+
+.video-container {
+    padding-top: 75%;
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1000px;
+}
+
+
+.videoInfo ul {
+    display: flex;
+    padding: var(--padding-large);
+}
+
+.videoInfo ul li {
+    padding-right: var(--padding-medium);
+    font-size: var(--font-midium);
+}
+
+.videoInfo-title {
+    display: flex;
+    padding: 0 var(--padding-large);
+    font-weight: bold;
+}
+
+
+.action {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--padding-large);
+}
+
+.action i {
+    color: var(--grey);
+    padding-bottom: var(--padding-small);
+}
+
+.action li div {
+    color: var(--grey);
+}
+
+.action i.active {
+    color: var(--active);
+}
+
+.action li div.active {
+    color: var(--active);
+}
+
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.channelInfo {
+    padding: var(--padding-large);
+    display: flex;
+    justify-content: space-between;
+}
+
+.channelInfo-info {
+    display: flex;
+}
+
+.channelInfo img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--padding-medium);
+}
+
+.channelInfo-title {
+    font-size: var(--font-midium);
+}
+
+.channelInfo-subscriber {
+    font-size: var(--font-small);
+    color: var(--grey);
+    margin-top: var(--padding-small);
+}
+
+.channelInfo .subscribe {
+    text-transform: uppercase;
+    color: var(--header-logo);
+    font-weight: bolder;
+}
+
+.upNext-header {
+    padding: var(--padding-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-midium);
+}
+
+
+.upNext .autoplay {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 20px;
+}
+
+.upNext .autoplay input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.upNext .slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.upNext .slider.round:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider.round {
+    background-color: #2196F3;
+}
+
+input:focus+.slider.round {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider.round:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.upNext-video>li {
+    display: flex;
+    padding: 0 var(--padding-large) var(--padding-medium) var(--padding-large);
+}
+
+.upNext-video img {
+    width: 168px;
+    padding-right: var(--padding-medium);
+}
+
+.upNext-video-info>li.upNext-video-title {
+    font-size: var(--font-small);
+    color: black;
+}
+
+.upNext-video-info>li {
+    font-size: var(--font-micro);
+    color: var(--grey);
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .webLeftAndRight {
+        display: flex;
+
+    }
+}
